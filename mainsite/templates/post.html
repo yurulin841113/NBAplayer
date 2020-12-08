@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} {{post_detail.title}}|NBA Player介紹{% endblock %}
+
+{% block headmessage %}
+    <h1 style="font-family: 微軟正黑體;font-size: 20pt;letter-spacing: 2pt;text-align: center">{{post_detail.title}}</h1>
+{% endblock %}
+
+{% block content %}
+
+    <div align="center" >
+        <a href="{{post_detail.slug}}" target="_blank"><img style="width:350px"src="{{post_detail.photo}}"/></a>
+    </div>
+
+    <hr>
+
+    <p style="font-size: 12pt">{{post_detail.body}}</p>
+    <p style="font-size: 12pt">發布時間:{{post_detail.post_date|date:"Y/m/d H:m:s"}}</p>
+    <p style="text-align: center;font-size: 30pt"> <a align="center" href="/main/">回首頁</a></p>
+
+{% endblock %}
+
+{% include 'footer.html'}
+
+

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %} NBA Player介紹 {% endblock %}
+
+{% block headmessage %}
+    <h3>NBA球員列表</h3>
+{% endblock %}
+
+{% block content %}
+    {% for i in post_list%}
+        <!--根據在 urls.py 中設定的「name」值，找到對應的 URL-->
+        <div style="font-size:20pt ">
+            <a href="{% url 'post_detail' pk=i.pk %}"> {{i.title}}</a>
+        </div>
+    {% endfor %}
+{% endblock %}
+

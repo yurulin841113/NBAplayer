@@ -1,0 +1,7 @@
+{% block footer %}
+{% if current_time %}
+    <p style="text-align: center">現在時刻:{{current_time}}</p>
+{% else %}
+    <p style="text-align: center">本文內容取自網路 如有侵權請來信下架</p>
+{% endif %}
+{% endblock %}
