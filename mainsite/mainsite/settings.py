@@ -121,3 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS =[os.path.join(BASE_DIR, 'static'),]
+
+# (佈署網站記得加!)
+# STATIC_ROOT = "/home/yurulin841113/mainsite/static"
+# STATIC_ROOT = os.path.join(BASE_DIR, "static")
