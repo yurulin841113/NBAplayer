@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load markdown_deux_tags %}
 
 {% block title %} {{post_detail.title}}|NBA Player介紹{% endblock %}
 
@@ -14,7 +15,7 @@
 
     <hr>
     <!--加上safe可以使用Html語法-->
-    <p style="font-size: 12pt;letter-spacing: 2pt">{{post_detail.body|safe}}</p>
+    <p style="font-size: 12pt;letter-spacing: 2pt">{{post_detail.body|markdown}}</p>
     <p style="font-size: 12pt">發布時間:{{post_detail.post_date|date:"Y/m/d H:m:s"}}</p>
 
 {% endblock %}
