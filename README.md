@@ -4,4 +4,4 @@
 ### Django 3.1.4 + sqlite3 建置 Python網站
 ### 網址:http://yurulin841113.pythonanywhere.com/main/
 
-![image](https://i.imgur.com/bnMINNP.png)
+![image](https://i.imgur.com/28ZqJ2a.png)
