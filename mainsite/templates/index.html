@@ -7,25 +7,25 @@
 {% endblock %}
 
 {% block content %}
-{% for i in post_list%}
+    {% for i in post_list%}
 
-  <div class="card  bg-light border-light mb-3">
+    <div class="card  bg-light border-light mb-3">
 
-        <!--根據在 urls.py 中設定的「name」值，找到對應的 URL-->
-        <div style="font-size:20pt " class="card-header  bg-dark border-Primary">
-            <a href="{% url 'post_detail' pk=i.pk %}"> {{i.title}}</a>
-        </div>
+            <!--根據在 urls.py 中設定的「name」值，找到對應的 URL-->
+            <div style="font-size:20pt " class="card-header  bg-dark border-Primary">
+                <a href="{% url 'post_detail' pk=i.pk %}"> {{i.title}}</a>
+            </div>
 
-        <div class="card-body text-info">
-            {{i.body | truncatechars:100}}
-        </div>
+            <div class="card-body text-info">
+                {{i.body | truncatechars:100}}
+            </div>
 
-        <div class="card-footer text-info border-dark">
-             張貼時間: {{i.post_date}}
-        </div>
+            <div class="card-footer text-info border-dark">
+                張貼時間: {{i.post_date}}
+            </div>
 
-   </div> 
+    </div> 
 
-{% endfor %}
+    {% endfor %}
 {% endblock %}
 

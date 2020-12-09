@@ -13,10 +13,9 @@
     </div>
 
     <hr>
-
-    <p style="font-size: 12pt">{{post_detail.body}}</p>
+    <!--加上safe可以使用Html語法-->
+    <p style="font-size: 12pt;letter-spacing: 2pt">{{post_detail.body|safe}}</p>
     <p style="font-size: 12pt">發布時間:{{post_detail.post_date|date:"Y/m/d H:m:s"}}</p>
-    <p style="text-align: center;font-size: 30pt"> <a align="center" href="/main/">回首頁</a></p>
 
 {% endblock %}
 

@@ -1,7 +1,9 @@
 {% block footer %}
 {% if current_time %}
     <p style="text-align: center">現在時刻:{{current_time}}</p>
+    <p style="text-align: center">本文內容取自網路 如有侵權請來信下架 | yurulin841113@gmail.com</p>
 {% else %}
-    <p style="text-align: center">本文內容取自網路 如有侵權請來信下架</p>
+    <p style="text-align: center;font-size: 30pt"> <a align="center" href="/main/">回首頁</a></p>
+    <p style="text-align: center">本文內容取自網路 如有侵權請來信下架 | yurulin841113@gmail.com</p>
 {% endif %}
 {% endblock %}
