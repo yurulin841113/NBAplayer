@@ -1,4 +1,4 @@
-# NBA球員介紹(開發中)
+# NBA球員介紹
 ### 虛擬環境:VMware Workstation 15 Player
 ### Linux:ubuntu-20.04.1
 ### Django 3.1.4 + sqlite3 建置 Python網站
